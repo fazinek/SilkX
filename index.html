@@ -3,270 +3,171 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aurora Perfumes — SilkX</title>
-<meta name="description" content="SilkX by Aurora Perfumes — chocolate musk inspired fragrance.">
+
+<title>SilkX — Aurora Perfumes</title>
+
+<meta name="description"
+content="SilkX by Aurora Perfumes — Sweet. Smooth. Addictive.">
+
 <style>
 :root{
   --maroon:#4b002c;
-  --deep:#260016;
-  --gold:#d7b36a;
-  --cream:#fffaf4;
-  --text:#24151e;
+  --deep:#240014;
+  --gold:#d6b36a;
+  --cream:#fffaf5;
+  --soft:#f7edf1;
+  --text:#26161e;
   --muted:#75656d;
-  --card:#ffffff;
-  --line:#eadfe4;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--cream);color:var(--text)}
-a{text-decoration:none;color:inherit}
-.container{width:min(1100px,92%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(255,250,244,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{height:45px;width:auto;display:block;border-radius:4px}
-.navlinks{display:flex;gap:22px;font-size:14px}
-.navlinks a:hover{color:var(--maroon)}
-.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:12px;padding:13px 20px;font-weight:750;cursor:pointer;font-size:15px}
-.btn-primary{background:var(--maroon);color:white;box-shadow:0 10px 25px rgba(75,0,44,.18)}
-.btn-gold{background:var(--gold);color:#2b1a0d}
-.btn-outline{border:1px solid var(--maroon);color:var(--maroon);background:white}
-.hero{padding:65px 0 55px;background:linear-gradient(135deg,#fffaf4 0%,#f7eaf0 100%)}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px}
-.eyebrow{display:inline-block;color:var(--maroon);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12px;margin-bottom:14px}
-h1{font-family:Georgia,serif;font-size:clamp(48px,7vw,82px);line-height:.9;margin:0 0 20px;color:var(--maroon)}
-.hero h2{font-size:22px;margin:0 0 15px}
-.hero p{font-size:17px;line-height:1.7;color:var(--muted);max-width:570px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.mockup{min-height:390px;display:flex;align-items:center;justify-content:center;position:relative}
-.glow{position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(215,179,106,.23);filter:blur(8px)}
-.bottle{position:relative;width:170px;height:285px;border-radius:18px 18px 26px 26px;background:linear-gradient(90deg,#24121b,#603a49 50%,#28131e);box-shadow:25px 25px 45px rgba(42,0,24,.28),inset 9px 0 15px rgba(255,255,255,.08)}
-.bottle:before{content:"";position:absolute;top:-53px;left:47px;width:76px;height:58px;border-radius:8px 8px 3px 3px;background:linear-gradient(90deg,#111,#333 50%,#151515);box-shadow:0 7px 0 #171717}
-.label{position:absolute;left:17px;right:17px;top:83px;height:118px;border:1px solid rgba(215,179,106,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;background:rgba(74,0,43,.72)}
-.label strong{font-family:Georgia,serif;font-size:30px;letter-spacing:2px}
-.label small{font-size:9px;letter-spacing:2px;margin-top:8px}
-.volume{position:absolute;bottom:13px;right:18px;color:#e6d3ac;font-size:10px;letter-spacing:2px}
-section{padding:70px 0}
-.section-title{text-align:center;margin-bottom:38px}
-.section-title h2{font-family:Georgia,serif;font-size:38px;margin:0 0 10px;color:var(--maroon)}
-.section-title p{color:var(--muted);margin:0}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:25px;box-shadow:0 8px 30px rgba(50,10,30,.05)}
-.icon{width:44px;height:44px;border-radius:12px;background:#f4e6ed;color:var(--maroon);display:grid;place-items:center;font-size:21px;margin-bottom:16px}
-.card h3{margin:0 0 8px;font-size:18px}
-.card p{margin:0;color:var(--muted);line-height:1.6;font-size:14px}
-.offer{background:var(--maroon);color:white;border-radius:26px;padding:38px;display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center}
-.offer h2{font-family:Georgia,serif;font-size:34px;margin:0 0 8px}
-.offer p{margin:0;color:#eadde4}
-.price{font-size:31px;font-weight:900;color:var(--gold)}
-.old{text-decoration:line-through;opacity:.6;font-size:15px;margin-left:7px}
-.order{background:#f5e9ee}
-.order-grid{display:grid;grid-template-columns:1fr .85fr;gap:25px;align-items:start}
-form{background:white;border-radius:22px;padding:28px;border:1px solid var(--line)}
-.field{margin-bottom:16px}
-label{display:block;font-size:13px;font-weight:750;margin-bottom:7px}
-input,select,textarea{width:100%;padding:13px 14px;border:1px solid #ded2d8;border-radius:11px;font:inherit;outline:none;background:#fff}
-input:focus,select:focus,textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(75,0,44,.08)}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.payment{background:white;border:1px solid var(--line);border-radius:22px;padding:28px}
-.payment h3{margin-top:0}
-.pay-option{display:flex;gap:10px;align-items:center;border:1px solid var(--line);padding:13px;border-radius:12px;margin:9px 0;cursor:pointer}
-.summary{margin-top:18px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-weight:800}
-.notice{font-size:12px;color:var(--muted);line-height:1.5;margin-top:12px}
-footer{background:#210013;color:#e8dce2;padding:35px 0;text-align:center}
-footer img{height:38px;margin-bottom:12px}
-footer p{margin:4px 0;font-size:13px}
-.toast{position:fixed;left:50%;bottom:25px;transform:translateX(-50%) translateY(120px);background:#21121a;color:white;padding:14px 20px;border-radius:12px;transition:.3s;z-index:50;box-shadow:0 12px 35px rgba(0,0,0,.2)}
-.toast.show{transform:translateX(-50%) translateY(0)}
-@media(max-width:800px){
-  .navlinks{display:none}
-  .hero-grid,.order-grid{grid-template-columns:1fr}
-  .hero{padding-top:42px}
-  .mockup{min-height:330px}
-  .features{grid-template-columns:1fr}
-  .offer{grid-template-columns:1fr}
-}
-@media(max-width:500px){
-  .row{grid-template-columns:1fr}
-  section{padding:52px 0}
-  .offer{padding:28px}
-}
-</style>
-</head>
-<body>
-
-<header>
-  <div class="container nav">
-    <a href="#top"><img class="logo" src="aurora-logo.png" alt="Aurora Perfumes"></a>
-    <nav class="navlinks">
-      <a href="#features">Features</a>
-      <a href="#offer">Offer</a>
-      <a href="#order">Order</a>
-    </nav>
-    <a class="btn btn-primary" href="#order">Order SilkX</a>
-  </div>
-</header>
-
-<main id="top">
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow">Aurora Perfumes</span>
-      <h1>SilkX</h1>
-      <h2>Sweet. Smooth. Addictive.</h2>
-      <p>A warm chocolate-musk inspired fragrance designed for everyday confidence. A simple scent that feels soft, attractive and memorable.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#order">Get SilkX — ₹149</a>
-        <a class="btn btn-outline" href="#features">Explore</a>
-      </div>
-    </div>
-    <div class="mockup" aria-label="Sample SilkX product mockup">
-      <div class="glow"></div>
-      <div class="bottle">
-        <div class="label"><strong>SilkX</strong><small>EAU DE PARFUM</small></div>
-        <div class="volume">8 ML</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="features">
-  <div class="container">
-    <div class="section-title">
-      <h2>Why SilkX?</h2>
-      <p>Everything you need from a pocket-size everyday fragrance.</p>
-    </div>
-    <div class="features">
-      <div class="card"><div class="icon">✦</div><h3>Confident Presence</h3><p>A warm, sweet fragrance profile made to complement your presence without being complicated.</p></div>
-      <div class="card"><div class="icon">◈</div><h3>Easy to Carry</h3><p>Compact 8 ml format that fits easily in your pocket, bag or travel kit.</p></div>
-      <div class="card"><div class="icon">♡</div><h3>Everyday Scent</h3><p>Made for daily use — college, work, outings, dates and casual evenings.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="offer">
-  <div class="container">
-    <div class="offer">
-      <div>
-        <h2>Your signature can be simple.</h2>
-        <p>SilkX 8 ml · Aurora Perfumes</p>
-      </div>
-      <div>
-        <div class="price">₹149 <span class="old">₹199</span></div>
-        <a class="btn btn-gold" href="#order">Place Order</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="order" id="order">
-  <div class="container">
-    <div class="section-title">
-      <h2>Place Your Order</h2>
-      <p>Fill in your details and choose a payment method.</p>
-    </div>
-
-    <div class="order-grid">
-      <form id="orderForm">
-        <div class="row">
-          <div class="field"><label for="name">Name</label><input id="name" required placeholder="Your name"></div>
-          <div class="field"><label for="phone">Phone</label><input id="phone" required inputmode="tel" placeholder="10-digit number"></div>
-        </div>
-        <div class="field"><label for="address">Delivery address</label><textarea id="address" required rows="3" placeholder="House name, place, PIN code"></textarea></div>
-        <div class="row">
-          <div class="field"><label for="qty">Quantity</label>
-            <select id="qty">
-              <option value="1">1 × SilkX</option>
-              <option value="2">2 × SilkX — ₹279</option>
-              <option value="3">3 × SilkX — ₹399</option>
-              <option value="5">5 × SilkX — ₹649</option>
-            </select>
-          </div>
-          <div class="field"><label for="payment">Payment</label>
-            <select id="payment">
-              <option>UPI — ekmfmmedia@okicici</option>
-            </select>
-          </div>
-        </div>
-        <button class="btn btn-primary" style="width:100%" type="submit">Continue to Payment</button>
-        <p class="notice">Prepaid only. Tap “Pay via UPI” to open your UPI app, then send your order confirmation on WhatsApp.</p>
-      </form>
-
-      <aside class="payment">
-        <h3>Order Summary</h3>
-        <p style="color:var(--muted)">SilkX Eau de Parfum · 8 ml</p>
-        <div class="summary"><span>Subtotal</span><span id="total">₹149</span></div>
-        <div style="margin-top:18px">
-          <label>Available payment options</label>
-          <div class="pay-option">🟣 UPI <span style="margin-left:auto;color:var(--muted)">ekmfmmedia@okicici</span></div>
-          <a class="btn btn-primary" id="upiBtn" href="#" style="width:100%;margin-top:12px">Pay via UPI</a>
-          <a class="btn btn-gold" id="whatsappBtn" href="#" target="_blank" style="width:100%;margin-top:10px">Confirm Order on WhatsApp</a>
-        </div>
-      </aside>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer>
-  <img src="aurora-logo.png" alt="Aurora Perfumes">
-  <p>Fragrance Emporium · SilkX</p>
-  <p>© 2026 Aurora Perfumes</p>
-</footer>
-
-<div class="toast" id="toast"></div>
-
-<script>
-const qty = document.getElementById('qty');
-const total = document.getElementById('total');
-const prices = {1:149,2:279,3:399,5:649};
-
-qty.addEventListener('change', () => {
-  total.textContent = '₹' + prices[qty.value];
-});
-
-function getOrderData(){
-  const name = document.getElementById('name').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const address = document.getElementById('address').value.trim();
-  const q = qty.value;
-  const amount = prices[q];
-  return {name, phone, address, q, amount};
+  --white:#ffffff;
+  --border:#eadde3;
 }
 
-function updatePaymentLinks(){
-  const o = getOrderData();
-  const upi = 'ekmfmmedia@okicici';
-  const upiUrl = `upi://pay?pa=${encodeURIComponent(upi)}&pn=${encodeURIComponent('Aurora Perfumes')}&am=${o.amount.toFixed(2)}&cu=INR&tn=${encodeURIComponent('SilkX order')}`;
-  document.getElementById('upiBtn').href = upiUrl;
-
-  const message =
-`Hello Aurora Perfumes, I want to order SilkX.
-
-Name: ${o.name || '-'}
-Phone: ${o.phone || '-'}
-Quantity: ${o.q}
-Amount: ₹${o.amount}
-Address: ${o.address || '-'}
-
-UPI ID: ${upi}
-Payment status: I will pay via UPI.`;
-
-  document.getElementById('whatsappBtn').href =
-    `https://wa.me/916235352381?text=${encodeURIComponent(message)}`;
+*{
+  box-sizing:border-box;
 }
 
-['name','phone','address'].forEach(id => {
-  document.getElementById(id).addEventListener('input', updatePaymentLinks);
-});
-qty.addEventListener('change', updatePaymentLinks);
+html{
+  scroll-behavior:smooth;
+}
 
-document.getElementById('orderForm').addEventListener('submit', (e) => {
-  e.preventDefault();
-  updatePaymentLinks();
-  document.getElementById('upiBtn').click();
-});
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--cream);
+  color:var(--text);
+}
 
-updatePaymentLinks();
-</script>
-</body>
-</html>
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:min(1080px,92%);
+  margin:auto;
+}
+
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,250,245,.95);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+
+.nav{
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+}
+
+.logo{
+  height:45px;
+  width:auto;
+}
+
+.nav-links{
+  display:flex;
+  gap:22px;
+  font-size:14px;
+}
+
+.nav-links a:hover{
+  color:var(--maroon);
+}
+
+/* BUTTONS */
+
+.btn{
+  border:none;
+  border-radius:12px;
+  padding:14px 20px;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:translateY(-1px);
+}
+
+.primary{
+  background:var(--maroon);
+  color:white;
+}
+
+.gold{
+  background:var(--gold);
+  color:#24150a;
+}
+
+.outline{
+  background:white;
+  color:var(--maroon);
+  border:1px solid var(--maroon);
+}
+
+/* HERO */
+
+.hero{
+  padding:70px 0;
+  background:linear-gradient(135deg,#fffaf5,#f5e7ee);
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:50px;
+  align-items:center;
+}
+
+.eyebrow{
+  color:var(--maroon);
+  font-weight:800;
+  letter-spacing:2px;
+  font-size:12px;
+}
+
+h1{
+  font-family:Georgia,serif;
+  font-size:clamp(55px,8vw,85px);
+  color:var(--maroon);
+  margin:15px 0;
+}
+
+.hero h2{
+  font-size:23px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  color:var(--muted);
+  font-size:17px;
+  line-height:1.7;
+  max-width:560px;
+}
+
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+
+/* SAMPLE BOTTLE */
+
+.mockup{
+  height:390px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative
