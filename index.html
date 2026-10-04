@@ -2,33 +2,23 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SilkX — Aurora Perfumes</title>
-
-<meta name="description"
-content="SilkX by Aurora Perfumes — Sweet. Smooth. Addictive.">
 
 <style>
 :root{
   --maroon:#4b002c;
-  --deep:#240014;
   --gold:#d6b36a;
   --cream:#fffaf5;
   --soft:#f7edf1;
   --text:#26161e;
   --muted:#75656d;
-  --white:#ffffff;
   --border:#eadde3;
 }
 
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
-html{
-  scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
   margin:0;
@@ -37,24 +27,18 @@ body{
   color:var(--text);
 }
 
-a{
-  text-decoration:none;
-  color:inherit;
-}
+a{text-decoration:none;color:inherit}
 
 .container{
   width:min(1080px,92%);
   margin:auto;
 }
 
-/* HEADER */
-
 header{
   position:sticky;
   top:0;
-  z-index:50;
-  background:rgba(255,250,245,.95);
-  backdrop-filter:blur(12px);
+  z-index:20;
+  background:rgba(255,250,245,.96);
   border-bottom:1px solid var(--border);
 }
 
@@ -63,7 +47,6 @@ header{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:15px;
 }
 
 .logo{
@@ -71,47 +54,36 @@ header{
   width:auto;
 }
 
-.nav-links{
+.navlinks{
   display:flex;
   gap:22px;
   font-size:14px;
 }
 
-.nav-links a:hover{
-  color:var(--maroon);
-}
-
-/* BUTTONS */
-
 .btn{
-  border:none;
+  border:0;
   border-radius:12px;
   padding:14px 20px;
   font-size:15px;
   font-weight:700;
   cursor:pointer;
   display:inline-flex;
-  align-items:center;
   justify-content:center;
-  transition:.2s;
-}
-
-.btn:hover{
-  transform:translateY(-1px);
+  align-items:center;
 }
 
 .primary{
   background:var(--maroon);
-  color:white;
+  color:#fff;
 }
 
 .gold{
   background:var(--gold);
-  color:#24150a;
+  color:#26160b;
 }
 
 .outline{
-  background:white;
+  background:#fff;
   color:var(--maroon);
   border:1px solid var(--maroon);
 }
@@ -132,28 +104,27 @@ header{
 
 .eyebrow{
   color:var(--maroon);
+  font-size:12px;
   font-weight:800;
   letter-spacing:2px;
-  font-size:12px;
 }
 
 h1{
   font-family:Georgia,serif;
-  font-size:clamp(55px,8vw,85px);
   color:var(--maroon);
+  font-size:clamp(55px,8vw,85px);
   margin:15px 0;
 }
 
 .hero h2{
   font-size:23px;
-  margin-bottom:15px;
 }
 
 .hero p{
+  max-width:560px;
   color:var(--muted);
   font-size:17px;
   line-height:1.7;
-  max-width:560px;
 }
 
 .actions{
@@ -170,4 +141,1085 @@ h1{
   display:flex;
   align-items:center;
   justify-content:center;
-  position:relative
+  position:relative;
+}
+
+.glow{
+  position:absolute;
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  background:rgba(214,179,106,.22);
+}
+
+.bottle{
+  position:relative;
+  width:170px;
+  height:285px;
+  border-radius:18px 18px 25px 25px;
+  background:linear-gradient(90deg,#1b0c13,#5c3547,#241019);
+  box-shadow:20px 25px 40px rgba(40,0,25,.25);
+}
+
+.bottle:before{
+  content:"";
+  position:absolute;
+  top:-53px;
+  left:47px;
+  width:76px;
+  height:58px;
+  border-radius:7px 7px 3px 3px;
+  background:linear-gradient(90deg,#111,#333,#111);
+}
+
+.bottle-label{
+  position:absolute;
+  top:83px;
+  left:17px;
+  right:17px;
+  height:118px;
+  border:1px solid rgba(214,179,106,.6);
+  background:rgba(75,0,44,.75);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+}
+
+.bottle-label strong{
+  font-family:Georgia,serif;
+  font-size:30px;
+}
+
+.bottle-label small{
+  margin-top:8px;
+  font-size:9px;
+  letter-spacing:2px;
+}
+
+.volume{
+  position:absolute;
+  right:18px;
+  bottom:13px;
+  color:#e5d0a5;
+  font-size:10px;
+}
+
+/* SECTIONS */
+
+section{
+  padding:70px 0;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:38px;
+}
+
+.section-title h2{
+  font-family:Georgia,serif;
+  color:var(--maroon);
+  font-size:38px;
+  margin:0 0 10px;
+}
+
+.section-title p{
+  color:var(--muted);
+}
+
+/* FEATURES */
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:25px;
+}
+
+.icon{
+  width:45px;
+  height:45px;
+  border-radius:12px;
+  background:#f3e5eb;
+  display:grid;
+  place-items:center;
+  color:var(--maroon);
+  font-size:20px;
+}
+
+.card h3{
+  margin-bottom:8px;
+}
+
+.card p{
+  color:var(--muted);
+  line-height:1.6;
+  font-size:14px;
+}
+
+/* OFFER */
+
+.offer{
+  background:var(--maroon);
+  color:white;
+  border-radius:25px;
+  padding:35px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.offer h2{
+  font-family:Georgia,serif;
+  font-size:34px;
+  margin:0 0 8px;
+}
+
+.offer p{
+  color:#eadde3;
+}
+
+.price{
+  font-size:32px;
+  font-weight:900;
+  color:var(--gold);
+}
+
+.old{
+  color:white;
+  opacity:.55;
+  font-size:15px;
+  text-decoration:line-through;
+}
+
+/* ORDER */
+
+.order{
+  background:var(--soft);
+}
+
+.order-grid{
+  display:grid;
+  grid-template-columns:1fr .85fr;
+  gap:25px;
+}
+
+.form-card,
+.payment-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:28px;
+}
+
+.field{
+  margin-bottom:16px;
+}
+
+label{
+  display:block;
+  font-size:13px;
+  font-weight:700;
+  margin-bottom:7px;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  padding:13px 14px;
+  border:1px solid #ddd0d7;
+  border-radius:11px;
+  font:inherit;
+  outline:none;
+}
+
+.row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.total{
+  display:flex;
+  justify-content:space-between;
+  padding:17px 0;
+  border-top:1px solid var(--border);
+  margin-top:15px;
+  font-size:18px;
+  font-weight:800;
+}
+
+.upi-box{
+  margin-top:20px;
+  padding:20px;
+  background:#faf5f7;
+  border-radius:18px;
+  text-align:center;
+}
+
+.qr{
+  width:230px;
+  height:230px;
+  max-width:100%;
+  object-fit:contain;
+  background:white;
+  padding:10px;
+  border-radius:12px;
+  display:none;
+  margin:18px auto;
+  border:1px solid var(--border);
+}
+
+.upi-id{
+  color:var(--maroon);
+  font-weight:800;
+  word-break:break-all;
+}
+
+.notice{
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.5;
+}
+
+.steps{
+  display:none;
+  margin-top:20px;
+  text-align:left;
+}
+
+.step{
+  display:flex;
+  gap:12px;
+  margin:15px 0;
+}
+
+.step-number{
+  min-width:30px;
+  height:30px;
+  border-radius:50%;
+  background:var(--maroon);
+  color:white;
+  display:grid;
+  place-items:center;
+  font-weight:800;
+}
+
+footer{
+  background:#240014;
+  color:#eadde3;
+  text-align:center;
+  padding:35px 0;
+}
+
+footer img{
+  height:38px;
+}
+
+footer p{
+  font-size:13px;
+  margin:5px;
+}
+
+.toast{
+  position:fixed;
+  left:50%;
+  bottom:25px;
+  transform:translateX(-50%) translateY(120px);
+  background:#21121a;
+  color:#fff;
+  padding:14px 20px;
+  border-radius:12px;
+  transition:.3s;
+  z-index:100;
+  max-width:90%;
+  text-align:center;
+}
+
+.toast.show{
+  transform:translateX(-50%) translateY(0);
+}
+
+@media(max-width:800px){
+
+  .navlinks{
+    display:none;
+  }
+
+  .hero-grid,
+  .order-grid{
+    grid-template-columns:1fr;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+
+  .offer{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .mockup{
+    height:330px;
+  }
+}
+
+@media(max-width:500px){
+
+  .row{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:52px 0;
+  }
+
+  .form-card,
+  .payment-card{
+    padding:20px;
+  }
+
+  .qr{
+    width:210px;
+    height:210px;
+  }
+}
+</style>
+</head>
+
+
+<body>
+
+<header>
+
+<div class="container nav">
+
+<a href="#top">
+<img
+src="aurora-logo.png"
+class="logo"
+alt="Aurora Perfumes">
+</a>
+
+<nav class="navlinks">
+<a href="#features">Features</a>
+<a href="#offer">Offer</a>
+<a href="#order">Order</a>
+</nav>
+
+<a href="#order" class="btn primary">
+Order SilkX
+</a>
+
+</div>
+
+</header>
+
+
+<main id="top">
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<span class="eyebrow">
+AURORA PERFUMES
+</span>
+
+<h1>SilkX</h1>
+
+<h2>
+Sweet. Smooth. Addictive.
+</h2>
+
+<p>
+A warm, sweet chocolate-musk inspired fragrance
+designed for everyday confidence.
+</p>
+
+<div class="actions">
+
+<a href="#order" class="btn primary">
+Get SilkX — ₹149
+</a>
+
+<a href="#features" class="btn outline">
+Explore
+</a>
+
+</div>
+
+</div>
+
+
+<div class="mockup">
+
+<div class="glow"></div>
+
+<div class="bottle">
+
+<div class="bottle-label">
+
+<strong>SilkX</strong>
+
+<small>
+EAU DE PARFUM
+</small>
+
+</div>
+
+<div class="volume">
+8 ML
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section id="features">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Why SilkX?</h2>
+
+<p>
+A simple fragrance for your everyday moments.
+</p>
+
+</div>
+
+
+<div class="features">
+
+<div class="card">
+
+<div class="icon">✦</div>
+
+<h3>
+Confident Presence
+</h3>
+
+<p>
+A warm and sweet fragrance profile designed
+to complement your presence.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">◈</div>
+
+<h3>
+Easy to Carry
+</h3>
+
+<p>
+Compact 8 ml format that fits easily
+inside your pocket or bag.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">♡</div>
+
+<h3>
+Everyday Scent
+</h3>
+
+<p>
+Suitable for college, work, outings,
+dates and casual evenings.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- OFFER -->
+
+<section id="offer">
+
+<div class="container">
+
+<div class="offer">
+
+<div>
+
+<h2>
+Your signature can be simple.
+</h2>
+
+<p>
+SilkX Eau de Parfum · 8 ML
+</p>
+
+</div>
+
+<div>
+
+<div class="price">
+
+₹149
+
+<span class="old">
+₹199
+</span>
+
+</div>
+
+<a href="#order" class="btn gold">
+Place Order
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ORDER -->
+
+<section class="order" id="order">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Place Your Order
+</h2>
+
+<p>
+Prepaid UPI orders only.
+</p>
+
+</div>
+
+
+<div class="order-grid">
+
+
+<!-- FORM -->
+
+<form class="form-card" id="orderForm">
+
+<div class="row">
+
+<div class="field">
+
+<label>Name</label>
+
+<input
+id="name"
+required
+placeholder="Your name">
+
+</div>
+
+
+<div class="field">
+
+<label>Phone</label>
+
+<input
+id="phone"
+type="tel"
+inputmode="numeric"
+required
+placeholder="10-digit number">
+
+</div>
+
+</div>
+
+
+<div class="field">
+
+<label>Delivery Address</label>
+
+<textarea
+id="address"
+rows="4"
+required
+placeholder="House name, place, PIN code"></textarea>
+
+</div>
+
+
+<div class="field">
+
+<label>Quantity</label>
+
+<select id="qty">
+
+<option value="1">
+1 × SilkX — ₹149
+</option>
+
+<option value="2">
+2 × SilkX — ₹279
+</option>
+
+<option value="3">
+3 × SilkX — ₹399
+</option>
+
+<option value="5">
+5 × SilkX — ₹649
+</option>
+
+</select>
+
+</div>
+
+
+<button
+type="submit"
+class="btn primary"
+style="width:100%">
+
+Generate Payment QR
+
+</button>
+
+<p class="notice">
+
+After entering your details,
+generate the QR and pay through
+your UPI app.
+
+</p>
+
+</form>
+
+
+<!-- PAYMENT -->
+
+<div class="payment-card">
+
+<h3>
+Payment
+</h3>
+
+<p class="notice">
+SilkX · 8 ML
+</p>
+
+
+<div class="total">
+
+<span>Total</span>
+
+<span id="total">
+₹149
+</span>
+
+</div>
+
+
+<div class="upi-box">
+
+<strong>
+Scan to Pay
+</strong>
+
+
+<img
+id="qr"
+class="qr"
+alt="UPI Payment QR">
+
+
+<div class="upi-id">
+ekmfmmedia@okicici
+</div>
+
+
+<p id="paymentText" class="notice">
+
+Enter your details and generate
+your payment QR.
+
+</p>
+
+
+<a
+id="whatsapp"
+class="btn gold"
+target="_blank"
+rel="noopener"
+style="display:none;width:100%;margin-top:15px">
+
+Confirm Order on WhatsApp
+
+</a>
+
+</div>
+
+
+<div
+id="steps"
+class="steps">
+
+<div class="step">
+
+<div class="step-number">
+1
+</div>
+
+<div>
+
+<strong>
+Scan the QR
+</strong>
+
+<p class="notice">
+Use Google Pay, PhonePe, Paytm
+or another UPI app.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+2
+</div>
+
+<div>
+
+<strong>
+Complete payment
+</strong>
+
+<p class="notice">
+Pay the exact amount displayed.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+3
+</div>
+
+<div>
+
+<strong>
+Confirm on WhatsApp
+</strong>
+
+<p class="notice">
+Send the prepared order message
+after payment.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<p class="notice">
+
+UPI ID:
+<strong>ekmfmmedia@okicici</strong>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<img
+src="aurora-logo.png"
+alt="Aurora Perfumes">
+
+<p>
+Fragrance Emporium
+</p>
+
+<p>
+SilkX · 8 ML
+</p>
+
+<p>
+© 2026 Aurora Perfumes
+</p>
+
+</footer>
+
+
+<div id="toast" class="toast"></div>
+
+
+<script>
+
+const PRICES = {
+  1:149,
+  2:279,
+  3:399,
+  5:649
+};
+
+const UPI_ID =
+"ekmfmmedia@okicici";
+
+const WHATSAPP =
+"916235352381";
+
+
+const form =
+document.getElementById("orderForm");
+
+const quantity =
+document.getElementById("qty");
+
+const total =
+document.getElementById("total");
+
+const qr =
+document.getElementById("qr");
+
+const paymentText =
+document.getElementById("paymentText");
+
+const whatsapp =
+document.getElementById("whatsapp");
+
+const steps =
+document.getElementById("steps");
+
+const toast =
+document.getElementById("toast");
+
+
+/*
+UPDATE PRICE
+*/
+
+function updatePrice(){
+
+const amount =
+PRICES[quantity.value];
+
+total.textContent =
+"₹" + amount;
+
+}
+
+quantity.addEventListener(
+"change",
+updatePrice
+);
+
+
+/*
+CREATE QR
+*/
+
+form.addEventListener(
+"submit",
+function(event){
+
+event.preventDefault();
+
+
+const name =
+document.getElementById("name")
+.value
+.trim();
+
+const phone =
+document.getElementById("phone")
+.value
+.trim();
+
+const address =
+document.getElementById("address")
+.value
+.trim();
+
+const qty =
+quantity.value;
+
+const amount =
+PRICES[qty];
+
+
+/*
+UPI PAYMENT STRING
+*/
+
+const upiURL =
+"upi://pay" +
+"?pa=" +
+encodeURIComponent(UPI_ID) +
+"&pn=" +
+encodeURIComponent("Aurora Perfumes") +
+"&am=" +
+encodeURIComponent(
+amount.toFixed(2)
+) +
+"&cu=INR" +
+"&tn=" +
+encodeURIComponent(
+"SilkX Order"
+);
+
+
+/*
+QR IMAGE
+
+Uses Google Chart-compatible
+QR generation endpoint.
+*/
+
+qr.src =
+"https://api.qrserver.com/v1/create-qr-code/?" +
+"size=500x500&data=" +
+encodeURIComponent(upiURL);
+
+qr.style.display =
+"block";
+
+
+paymentText.innerHTML =
+"Scan and pay <strong>₹" +
+amount +
+"</strong>";
+
+
+/*
+WHATSAPP MESSAGE
+*/
+
+const message =
+`Hello Aurora Perfumes, I want to order SilkX.
+
+Name: ${name}
+Phone: ${phone}
+
+Quantity: ${qty}
+Amount: ₹${amount}
+
+Delivery Address:
+${address}
+
+UPI ID: ${UPI_ID}
+
+Payment: UPI
+
+I have completed the payment.
+Please confirm my order.`;
+
+
+whatsapp.href =
+"https://wa.me/" +
+WHATSAPP +
+"?text=" +
+encodeURIComponent(message);
+
+
+whatsapp.style.display =
+"flex";
+
+steps.style.display =
+"block";
+
+
+/*
+NOTIFICATION
+*/
+
+toast.textContent =
+"Payment QR generated for ₹" +
+amount;
+
+toast.classList.add("show");
+
+
+setTimeout(
+function(){
+
+toast.classList.remove("show");
+
+},
+3000
+);
+
+
+/*
+SCROLL TO PAYMENT
+*/
+
+document
+.querySelector(".payment-card")
+.scrollIntoView({
+behavior:"smooth",
+block:"center"
+});
+
+});
+
+
+updatePrice();
+
+</script>
+
+</body>
+</html>
